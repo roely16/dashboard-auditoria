@@ -7,7 +7,7 @@
                 </v-col>
                 <v-col class="text-center" cols="10">
                     <h1>Monitoreo de Cumplimiento de Protocolos</h1>
-                    <h2 class="success--text">Fecha {{ fecha }}</h2>
+                    <h2 class="success--text">Fecha: {{ fecha }}</h2>
                 </v-col>
                 <v-col>
                     <v-img width="100" src="@/assets/logoAve.png" contain></v-img>

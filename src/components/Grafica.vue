@@ -45,7 +45,8 @@
             return{
                 chartOptions: {
                     chart: {
-                        type: 'bar'
+                        type: 'bar',
+                        height: "550px"
                     },
                     title: {
                         text: undefined
@@ -57,7 +58,7 @@
                         },
                         labels: {
                             style: {
-                                fontSize: "20px",
+                                fontSize: "15px",
                             }
                         }
                     },
