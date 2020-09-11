@@ -8,7 +8,7 @@
                 <v-col class="text-center" cols="10">
                     <h1>Monitoreo de Cumplimiento de Protocolos (Tablero General)</h1>
                     <!-- <h2 class="success--text">Comprende el ejercicio efectuado 29 y 30 de agosto 2020</h2> -->
-                    <h2 class="success--text">Fecha: {{ fecha }}</h2>
+                    <h2 class="success--text">{{ fecha }}</h2>
                 </v-col>
                 <v-col>
                     <v-img width="100" src="@/assets/logoAve.png" contain></v-img>
