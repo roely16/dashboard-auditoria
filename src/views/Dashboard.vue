@@ -2,16 +2,19 @@
     <div>
         <v-container fluid>
              <v-row justify="center" align="center">
-                <v-col cols="1">
-                    <v-img width="75" src="@/assets/logo_muni_circulo.png" contain></v-img>
+                <v-col cols="2">
+                    <v-img width="300" src="@/assets/logo.jpg" contain></v-img>
                 </v-col>
-                <v-col class="text-center" cols="10">
+                <v-col class="text-center" cols="8">
                     <h1>Monitoreo de Cumplimiento de Protocolos (Tablero General)</h1>
                     <!-- <h2 class="success--text">Comprende el ejercicio efectuado 29 y 30 de agosto 2020</h2> -->
                     <h2 class="success--text">{{ fecha }}</h2>
                 </v-col>
                 <v-col>
-                    <v-img width="100" src="@/assets/logoAve.png" contain></v-img>
+                    
+                </v-col>
+                <v-col cols="1" class="text-center">
+                    <v-img width="125" src="@/assets/logo_das.jpeg" contain></v-img>
                 </v-col>
             </v-row>
             <v-divider></v-divider>
@@ -24,7 +27,7 @@
                         {{ total_reportes }}
                     </h1> -->
                 </v-col>
-                <v-col cols="6">
+                <!-- <v-col cols="6">
                     <h1 v-if="configuracion.tipo_ruta == 'L'" class="text-right">
                         <v-icon color="primary" x-large>mdi-road-variant</v-icon>
                         Ruta Larga
@@ -34,12 +37,12 @@
                         <v-icon color="primary" x-large>mdi-road-variant</v-icon>
                         Ruta Corta
                     </h1>
-                </v-col>
+                </v-col> -->
             </v-row>
 
             <v-row>
                 <v-col v-for="(indicador, key) in indicadores" :key="key" :cols="configuracion.columnas">
-                    <Indicador :color="indicador.color_porcentaje" :porcentaje="indicador.porcentaje" :cumplio="indicador.cumplen" :no_cumplio="indicador.no_cumplen" :configuracion="configuracion" :titulo="indicador.nombre_dashboard" />
+                    <Indicador :color="indicador.color_porcentaje" :porcentaje="indicador.porcentaje" :cumplio="indicador.cumplen" :no_cumplio="indicador.no_cumplen" :configuracion="configuracion" :titulo="indicador.nombre" />
                 </v-col>
             </v-row>
 

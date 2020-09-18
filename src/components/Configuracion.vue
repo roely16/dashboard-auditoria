@@ -25,7 +25,7 @@
                                 item-value="id"
                             ></v-select>
                         </v-col> -->
-                        <v-col cols="12"> 
+                        <!-- <v-col cols="12"> 
                             <v-select
                                 v-model="configuracion.tipo_ruta"
                                 :items="rutas"
@@ -35,7 +35,7 @@
                                 item-text="nombre"
                                 item-value="id"
                             ></v-select>
-                        </v-col>
+                        </v-col> -->
                         <v-col cols="12">
                             <v-text-field label="Tamaño de Columna" outlined hide-details v-model="configuracion.columnas"></v-text-field>
                         </v-col>
