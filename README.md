@@ -1,4 +1,6 @@
-# dashboard-auditoria
+# Dashboard Auditorias COVID-19
+
+Aplicación utilizada para la visualización de datos y reportes, provenientes de las distintas auditorias realizadas durante la pandemia de COVID-19. 
 
 ## Project setup
 ```
